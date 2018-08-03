@@ -9,7 +9,11 @@
     <script src="vendor/remark-0.14.1.js"></script>
     <script>
       var slideshow = remark.create({
-        sourceUrl: 'slides.md'
+        ratio: '16:9',
+        sourceUrl: 'slides.md',
+        navigation: {
+          scroll: false
+        }
       });
     </script>
   </body>
