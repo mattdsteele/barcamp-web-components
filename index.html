@@ -3,94 +3,14 @@
   <head>
     <title>Web Components</title>
     <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-
-      .weird {
-        color: blue;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <textarea id="source">
-
-class: center, middle
-
-# Web Components Aren't .weird[Weird] Anymore
-
-### Matt Steele
-
----
-
-# Web Components Aren't .weird[Weird] Anymore
-
-- Analogy (electric car maybe?)
-- Tech is like that too
-
----
-
-## Web Component Awesomeness
-
-- "Just Works" - drop an element on a page, it's working
-- Ship Less Code: tooling is in the browser now. Think `querySelectorAll` rather than jQuery
-- Works across frameworks
-
----
-
-## Web Component Weirdness
-
-*Huge Polyfills* - only natively supported in one browser. Slow in others
-
-*Framework lock-in* - Tied to polymer
-
-*Tooling badness* - bower, HTML Imports
-
-No wonder React won the component wars
-
----
-
-## It's Gotten Better
-
-Browsers Implemented
-
-Write "Vanilla" or use a framework (polymer, stencil, skate, lit-html, nutmeg, etc)
-
----
-
-## You Can Use Your Frameworks
-
-Angular elements, Vue exports, Dojo exports, React w/ a wrapper
-
-Use them in frameworks - custom-elements-everywhere
-
----
-
-## Others are using it
-
-- GitHub
-- YouTube
-- Stellar
-- UPRR
-
----
-
-## Weird can be good
-
-Just not for your components.
-
-    </textarea>
     <script src="vendor/remark-0.14.1.js"></script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        sourceUrl: 'slides.md'
+      });
     </script>
   </body>
 </html>
