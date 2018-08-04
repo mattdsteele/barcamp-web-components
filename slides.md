@@ -5,17 +5,39 @@ class: center, middle
 ### Matt Steele
 
 ---
+class: bigimg, middle
 
-# Analogy (electric car maybe?)
+![img](assets/contact1.jpg)
+
+---
+class: bigimg, middle
+
+![img](assets/contact4.jpg)
+
+---
+class: bigimg, middle
+
+![img](assets/contact2.jpg)
+
+---
+class: bigimg, middle
+
+![img](assets/contact3.jpg)
 
 ---
 
-# Tech is like that too
+class: center, middle
+
+# .weird[Weird]ness
 
 ---
 class: center, middle
 
-# Web Components (nee Custom Elements)
+# Web Components
+
+--
+
+## (Custom HTML Elements)
 
 --
 
@@ -30,18 +52,15 @@ class: center, middle
 # They Just Work
 --
 
-- They Work Easily
+- Easy to use
 ???
 No compile or Webkit necessary
 --
 
-- They Work Fast
+- Uses the platform
 --
 
-- `querySelectorAll` vs jQuery
---
-
-- They Work Everywhere
+- Works everywhere
 
 ---
 class: center, middle
@@ -89,11 +108,11 @@ class: bratz, center, middle
 
 ---
 
-# Weird Tools Jettisoned
+# .weird[Weird] stuff jettisoned
 
 ---
 
-# Weird Tools Jettisoned
+# .weird[Weird] stuff jettisoned
 
 * ~~HTML Imports~~ ➡️ ES Modules
 --
@@ -101,11 +120,20 @@ class: bratz, center, middle
 * ~~Bower~~ ➡️ NPM
 --
 
-* TypeScript, Webpack, Rollup, A-OK
+* Webpack ✅
+
+---
+class: image-list, center, middle
+
+# Browser Implemented
+
+![chrome](assets/chrome.png)
+![safari](assets/safari.png)
+![firefox](assets/firefox.png)
 
 ---
 
-# Write "Vanilla" Custom Elements
+# Vanilla Custom Elements
 
 ```javascript
 class HelloWorld extends HTMLElement {
@@ -120,19 +148,25 @@ class HelloWorld extends HTMLElement {
 customElements.define('hello-world', HelloWorld);
 ```
 ---
+class: image-list, center, middle
 
 # Or add some sugar
 
-### (polymer, stencil, skate, lit-html, nutmeg, etc)
+![polymer](assets/polymer.png)
+![skate](assets/skatejs.png)
+![nutmeg](assets/nutmeg.png)
+![stencil](assets/stencil.png)
 
 ---
 
 # Stencil
 
+![stencil](assets/stencil.png)
+
 * Code with TypeScript
 * Use JSX
 * Reactive Data Binding
-* No Runtime
+* Disappearing Framework
 
 ---
 
@@ -155,13 +189,7 @@ customElements.define('hello-world', HelloWorld);
 
 ---
 
-# Or write entire apps with them
-
-* Ionic's PWA Starter Kit
-
----
-
-# Others are using it
+# Github-Driven-Development
 
 ![github](assets/github.png)
 
@@ -170,16 +198,15 @@ customElements.define('hello-world', HelloWorld);
 # Others are using it
 
 - 📹 YouTube 
-- ✨ Stellar 
 - 🚂 UPRR 
+- ✨ Stellar 
 
 ---
 class: center, middle
 
-# .weird[Weird] can be good
+# Try Web Components Out
 
-## Just not for your websites.
-
+## It's better than an eyeball full of glass
 
 ---
 class: center, middle
