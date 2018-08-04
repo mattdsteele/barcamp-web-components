@@ -45,7 +45,11 @@ class: center, middle
 
 ---
 
-# Demo - Joy-Con component
+class: middle
+
+# Demo
+
+![img](assets/joy-con.jpg)
 
 ---
 
@@ -169,14 +173,33 @@ class: image-list, center, middle
 * Disappearing Framework
 
 ---
+# `<joy-con>` is a Stencil Component
 
-# Code example: joy-con
+```typescript
+@Component({
+  tag: "joy-con",
+  styleUrl: "joy-con.css",
+  shadow: true
+})
+export class MyComponent {
+  @State() private initialized = false;
+  @Prop() side: "L" | "R";
+  @Prop() left: string;
+  @Prop() right: string;
+
+  /* etc */
+
+  render() {
+    return <JoyConIcon active={this.initialized} />;
+  }
+}
+```
 
 ---
 
 # Your framework exports them
 
-* Angular Elements
+* Angular
 * Vue
 * Dojo
 * React (with a wrapper)
